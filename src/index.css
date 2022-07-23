@@ -1,0 +1,92 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  background-color: hsl(203, 65%, 12%);
+  display: flex;
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+#root {
+  background-color: hsl(0, 0%, 96%);
+  border-radius: 1rem;
+  height: 50rem;
+  width: 50rem;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  padding: 2rem 5rem;
+  width: 100%;
+}
+
+.description {
+  text-align: center;
+}
+
+.title {
+  color: hsl(250, 18%, 19%);
+  margin: 0 0 1rem;
+}
+
+.instructions {
+  color: hsl(234, 22%, 37%);
+  margin: 0;
+  max-width: 35rem;
+}
+
+.die-container {
+  display: grid;
+  gap: 2rem;
+  grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+  margin-bottom: 2rem;
+  place-items: center;
+  width: 100%;
+}
+
+.die {
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 5rem;
+  justify-content: center;
+  width: 5rem;
+}
+
+.roll-button {
+  background-color: hsl(248, 100%, 60%);
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.18);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  font-size: 2rem;
+  min-height: 5rem;
+  min-width: 15rem;
+  padding: 0.5rem 2rem;
+}
+
+.roll-button:focus {
+  outline: none;
+}
+
+.roll-button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
